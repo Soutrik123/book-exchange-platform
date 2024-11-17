@@ -1,11 +1,15 @@
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-unresolved */
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css'; // Optional: if you have global styles
+import { render } from 'react-dom';
+import App from './App.jsx';
+import './stylesheets/styles.scss'
 
-ReactDOM.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>,
-    document.getElementById('root')
+//our entry point  which allows us to include all the react components
+//building block for the bundle
+//contains all react components
+render(
+  <App />,
+  document.getElementById('root')
 );
